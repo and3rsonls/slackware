@@ -1,0 +1,40 @@
+Machine (P#0 local=5999964KB total=5999964KB DMIProductName="Inspiron N5110" DMIProductVersion="Not Specified" DMIProductSerial=GRQ02V1 DMIProductUUID=44454C4C-5200-1051-8030-C7C04F325631 DMIBoardVendor="Dell Inc." DMIBoardName=08FDW5 DMIBoardVersion=A11 DMIBoardSerial=.GRQ02V1.BR1081925A006R. DMIBoardAssetTag= DMIChassisVendor="Dell Inc." DMIChassisType=8 DMIChassisVersion="Not Specified" DMIChassisSerial=GRQ02V1 DMIChassisAssetTag= DMIBIOSVendor="Dell Inc." DMIBIOSVersion=A11 DMIBIOSDate=08/03/2012 DMISysVendor="Dell Inc." Backend=Linux LinuxCgroup=/ hwlocVersion=1.11.0 ProcessName=lstopo-no-graphics)
+  Package L#0 (P#0 CPUModel="Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz")
+    L3Cache L#0 (size=3072KB linesize=64 ways=12)
+      L2Cache L#0 (size=256KB linesize=64 ways=8)
+        L1dCache L#0 (size=32KB linesize=64 ways=8)
+          L1iCache L#0 (size=32KB linesize=64 ways=8)
+            Core L#0 (P#0)
+              PU L#0 (P#0)
+              PU L#1 (P#2)
+      L2Cache L#1 (size=256KB linesize=64 ways=8)
+        L1dCache L#1 (size=32KB linesize=64 ways=8)
+          L1iCache L#1 (size=32KB linesize=64 ways=8)
+            Core L#1 (P#1)
+              PU L#2 (P#1)
+              PU L#3 (P#3)
+  Bridge Host->PCI L#0 (P#0 buses=0000:[00-1f])
+    PCI 8086:0126 (P#32 busid=0000:00:02.0 class=0300(VGA))
+      GPU L#0 "card0"
+      GPU L#1 "controlD64"
+    Bridge PCI->PCI (P#449 busid=0000:00:1c.1 id=8086:1c12 class=0604(PCI_B) link=0.25GB/s buses=0000:[05-06])
+      PCI 10ec:8136 (P#20480 busid=0000:05:00.0 class=0200(Ether) link=0.25GB/s)
+        Network L#2 (Address=24:b6:fd:4c:9d:59) "eth0"
+    Bridge PCI->PCI (P#451 busid=0000:00:1c.3 id=8086:1c16 class=0604(PCI_B) link=0.25GB/s buses=0000:[09-0a])
+      PCI 168c:002b (P#36864 busid=0000:09:00.0 class=0280(Net) link=0.25GB/s)
+        Network L#3 (Address=94:39:e5:f3:6f:5d) "wlan0"
+    PCI 8086:1c03 (P#498 busid=0000:00:1f.2 class=0106(SATA))
+      Block(Disk) L#4 (LinuxDeviceID=8:0 Vendor=Seagate Model=ST9500325AS Revision=D005DEM1 SerialNumber=S2WG7CDX Type=Disk) "sda"
+      Block(Removable Media Device) L#5 (LinuxDeviceID=11:0 Model=HL-DT-ST_DVD+-RW_GT60N Revision=A102 SerialNumber=KZJC4S35849 Type="Removable Media Device") "sr0"
+depth 0:	1 Machine (type #1)
+ depth 1:	1 Package (type #3)
+  depth 2:	1 L3Cache (type #4)
+   depth 3:	2 L2Cache (type #4)
+    depth 4:	2 L1dCache (type #4)
+     depth 5:	2 L1iCache (type #4)
+      depth 6:	2 Core (type #5)
+       depth 7:	4 PU (type #6)
+Special depth -3:	3 Bridge (type #9)
+Special depth -4:	4 PCI Device (type #10)
+Special depth -5:	6 OS Device (type #11)
+Topology not from this system
